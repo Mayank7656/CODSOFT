@@ -1,13 +1,16 @@
 import java.util.Scanner;
 
-public class ATMExample {
-    public static void main(String[] args) {
-        int balance = 100000; // Initial balance
+public class ATMExample 
+    {
+    public static void main(String[] args) 
+    {
+        int balance = 100000;
         int withdraw, deposit;
 
         Scanner sc = new Scanner(System.in);
 
-        while (true) {
+        while (true) 
+    {
             System.out.println("Automated Teller Machine");
             System.out.println("Choose 1 for Withdraw");
             System.out.println("Choose 2 for Deposit");
@@ -17,14 +20,18 @@ public class ATMExample {
 
             int choice = sc.nextInt();
 
-            switch (choice) {
+            switch (choice) 
+    {
                 case 1:
                     System.out.print("Enter amount to be withdrawn: ");
                     withdraw = sc.nextInt();
-                    if (balance >= withdraw) {
+                    if (balance >= withdraw) 
+    {
                         balance -= withdraw;
                         System.out.println("Please collect your money.");
-                    } else {
+                    } 
+    else 
+    {
                         System.out.println("Insufficient Balance.");
                     }
                     break;
